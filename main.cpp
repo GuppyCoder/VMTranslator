@@ -19,7 +19,7 @@ int main() {
             fileNameVector.push_back(fileName);
             if (fileName.find(".vm") != std::string::npos) {
                 std::ifstream *f = new std::ifstream();
-                f->open(fileName);      // if it is already open why do we have to do this again?
+                f->open(fileName);      
                 if (f->is_open())
                     std::cout << "Good." << std::endl;
                 else
